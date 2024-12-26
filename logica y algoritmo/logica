@@ -1,0 +1,31 @@
+Realice el codigo en c# puedes probar el codigo en:
+https://codapi.org/csharp/
+
+codigo:
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static int FindFirstDuplicate(int[] nums)
+    {
+        HashSet<int> seen = new HashSet<int>();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (seen.Contains(nums[i]))
+                return i;
+            seen.Add(nums[i]);
+        }
+        return -1; // No hay duplicados
+    }
+
+    static void Main(string[] args)
+    {
+        int[] input1 = { 2, 3, 1, 5, 3, 2 };
+        int[] input2 = { 1, 2, 3, 4 };
+
+        Console.WriteLine(FindFirstDuplicate(input1)); // Output: 4
+        Console.WriteLine(FindFirstDuplicate(input2)); // Output: -1
+    }
+}
