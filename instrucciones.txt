@@ -1,0 +1,8 @@
+1.clona el repositorio en visual studio code
+2.abre 2 pestañas 
+3.en una pestaña tiene que estar la api(backend) y en otra la pagina(frontend)
+4.abre la terminal
+5.en cada una de las pestañas de visual estudio coloca correctamente su direccion EJEMPLO:PS C:\Users\jucam\PruebaTecnicaERCO\ProductsApi(web) 
+6.ejecuta primero la carpeta de ProductApi con (dontet run)en la terminal 
+7.En ProductWeb Ejecuta con (dotnet run) y ya estarias en la pagina con la api funcionando
+8.recuerda que tienen que estar las 2 ejecutandose en diferentes pestañas
